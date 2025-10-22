@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
+const ErrorResponse = require('./utils/errorResponse'); 
+
 // Route files
 const authRoutes = require('./routes/auth');
 const availabilityRoutes = require('./routes/availability');

@@ -36,7 +36,6 @@ exports.createAvailability = async (req, res, next) => {
 
     const availability = await Availability.create({
       professor: req.user._id,
-      slotId:
       startTime,
       endTime
     });
